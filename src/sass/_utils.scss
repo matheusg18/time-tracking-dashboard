@@ -1,0 +1,27 @@
+$card-colors: hsl(15, 100%, 70%), hsl(195, 74%, 62%), hsl(348, 100%, 68%), hsl(145, 58%, 55%),
+  hsl(264, 64%, 52%), hsl(43, 84%, 65%);
+$background-main: hsl(226, 43%, 10%);
+$background-profile-header: hsl(246, 80%, 60%);
+$background-card: hsl(235, 46%, 20%);
+$font-primary: hsl(236, 100%, 87%);
+$font-secondary: hsl(235, 45%, 61%);
+
+@function space($factor) {
+  $base-space: 8px;
+
+  @return $factor * $base-space;
+}
+
+%flex-column {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+%flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+%rounded-border {
+  border-radius: 15px;
+}

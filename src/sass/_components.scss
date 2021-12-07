@@ -1,0 +1,42 @@
+@use 'utils' as *;
+
+.profile-card {
+  @extend %rounded-border;
+  background-color: $background-card;
+  width: 90%;
+  margin: space(10) auto;
+  overflow: hidden;
+}
+
+.profile-header {
+  @extend %flex-row, %rounded-border;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $background-profile-header;
+  padding: space(4) space(3);
+}
+
+.profile-icon {
+  max-width: 70px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.profile-periods {
+  @extend %flex-row;
+  align-items: center;
+  justify-content: space-around;
+  padding: space(3);
+
+  input[type='radio'] {
+    appearance: none;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  input[type='radio']:checked + label {
+    color: $font-primary;
+  }
+}

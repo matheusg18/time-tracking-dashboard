@@ -1,0 +1,16 @@
+@use 'utils' as *;
+
+h1 {
+  color: $font-primary;
+  font-weight: 400;
+}
+
+label {
+  color: $font-secondary;
+}
+
+.report {
+  color: rgba($font-primary, 0.7);
+  font-size: 16px;
+  font-weight: 500;
+}
