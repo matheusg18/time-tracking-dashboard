@@ -1,10 +1,13 @@
 @use 'utils' as *;
 
+main {
+  width: 90%;
+  margin: space(10) auto;
+}
+
 .profile-card {
   @extend %rounded-border;
   background-color: $background-card;
-  width: 90%;
-  margin: space(10) auto;
   overflow: hidden;
 }
 
@@ -38,5 +41,28 @@
 
   input[type='radio']:checked + label {
     color: $font-primary;
+  }
+}
+
+.period-card {
+  @extend %rounded-border;
+  padding-top: space(5);
+  background: nth($card-colors, 1) url(../images/icon-work.svg) top -10px right 15px no-repeat;
+  margin-top: space(3);
+}
+
+.period-content {
+  @extend %rounded-border;
+  background-color: $background-card;
+  padding: space(4) space(3);
+}
+
+.period-sub-container {
+  @extend %flex-row;
+  align-items: center;
+  justify-content: space-between;
+
+  &:first-child {
+    margin-bottom: space(1);
   }
 }

@@ -14,3 +14,22 @@ label {
   font-size: 16px;
   font-weight: 500;
 }
+
+.period-title{
+  color: $font-primary;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.time-current {
+  color: $font-primary;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.time-previous {
+  color: rgba($font-primary, 0.7);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
