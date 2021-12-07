@@ -1,5 +1,11 @@
-$card-colors: hsl(15, 100%, 70%), hsl(195, 74%, 62%), hsl(348, 100%, 68%), hsl(145, 58%, 55%),
-  hsl(264, 64%, 52%), hsl(43, 84%, 65%);
+$card-colors: (
+  work: hsl(15, 100%, 70%),
+  play: hsl(195, 74%, 62%),
+  study: hsl(348, 100%, 68%),
+  exercise: hsl(145, 58%, 55%),
+  social: hsl(264, 64%, 52%),
+  self-care: hsl(43, 84%, 65%),
+);
 $background-main: hsl(226, 43%, 10%);
 $background-profile-header: hsl(246, 80%, 60%);
 $background-card: hsl(235, 46%, 20%);

@@ -2,8 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function PeriodCard({ title, timeframes: { current, previous } }) {
+  const getIconClass = () => `card-${title.toLowerCase().replace(' ', '-')}`;
+
   return (
-    <section className="period-card">
+    <section className={ `period-card ${getIconClass()}` }>
       <div className="period-content">
         <div className="period-sub-container">
           <h2 className="period-title">{title}</h2>

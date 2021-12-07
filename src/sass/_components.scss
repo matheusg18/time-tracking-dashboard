@@ -47,8 +47,13 @@ main {
 .period-card {
   @extend %rounded-border;
   padding-top: space(5);
-  background: nth($card-colors, 1) url(../images/icon-work.svg) top -10px right 15px no-repeat;
   margin-top: space(3);
+}
+
+@each $title, $color in $card-colors {
+  .card-#{$title} {
+    background: $color url(../images/icon-#{$title}.svg) top -5px right 15px no-repeat;
+  }
 }
 
 .period-content {
