@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-function ProfileCard() {
-  const [period, setPeriod] = useState('weekly');
-
+function ProfileCard({ period, setPeriod }) {
   return (
     <section className="profile-card">
       <div className="profile-header">
@@ -50,5 +49,10 @@ function ProfileCard() {
     </section>
   );
 }
+
+ProfileCard.propTypes = {
+  period: PropTypes.string.isRequired,
+  setPeriod: PropTypes.func.isRequired,
+};
 
 export default ProfileCard;
