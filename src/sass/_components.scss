@@ -1,14 +1,37 @@
 @use 'utils' as *;
 
 main {
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+}
+
+.container {
   width: 90%;
   margin: space(10) auto;
+
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: space(4);
+    width: fit-content;
+    margin: 0;
+  }
 }
 
 .profile-card {
   @extend %rounded-border;
   background-color: $background-card;
   overflow: hidden;
+
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+    grid-row: span 2;
+    max-width: 250px;
+  }
 }
 
 .profile-header {
@@ -17,12 +40,22 @@ main {
   justify-content: space-between;
   background-color: $background-profile-header;
   padding: space(4) space(3);
+
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: space(4) space(3) space(10);
+  }
 }
 
 .profile-icon {
-  max-width: 70px;
-  border: 2px solid white;
+  max-width: 80px;
+  border: 3px solid white;
   border-radius: 50%;
+
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+    margin-bottom: space(5);
+  }
 }
 
 .profile-periods {
@@ -30,6 +63,19 @@ main {
   align-items: center;
   justify-content: space-around;
   padding: space(3);
+
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: space(2);
+  }
+
+  div {
+    @media screen and (min-width: map-get($breakpoints, medium)) {
+      margin-bottom: space(2);
+    }
+  }
 
   input[type='radio'] {
     appearance: none;
@@ -40,7 +86,7 @@ main {
   }
 
   input[type='radio']:checked + label {
-    color: $font-primary;
+    color: white;
   }
 }
 
@@ -48,6 +94,11 @@ main {
   @extend %rounded-border;
   padding-top: space(5);
   margin-top: space(3);
+
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+      max-width: 300px;
+      margin: 0;
+  }
 }
 
 @each $title, $color in $card-colors {
@@ -60,6 +111,11 @@ main {
   @extend %rounded-border;
   background-color: $background-card;
   padding: space(4) space(3);
+
+  &:hover {
+    cursor: pointer;
+    background-color: lighten($background-card, 10%);
+  }
 }
 
 .period-sub-container {
@@ -69,5 +125,28 @@ main {
 
   &:first-child {
     margin-bottom: space(1);
+
+    @media screen and (min-width: map-get($breakpoints, medium)) {
+      margin-bottom: space(3);
+    }
+  }
+
+  &:last-child {
+    @media screen and (min-width: map-get($breakpoints, medium)) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+.ellipsis:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.time-current {
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+    margin-bottom: space(1.5);
   }
 }

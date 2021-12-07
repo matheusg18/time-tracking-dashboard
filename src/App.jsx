@@ -9,10 +9,12 @@ function App() {
 
   return (
     <main className="App">
-      <ProfileCard period={period} setPeriod={setPeriod} />
-      {data.map(({ title, timeframes }) => (
-        <PeriodCard key={title} title={title} timeframes={timeframes[period]} />
-      ))}
+      <div className="container">
+        <ProfileCard period={period} setPeriod={setPeriod} />
+        {data.map(({ title, timeframes }) => (
+          <PeriodCard key={title} title={title} timeframes={timeframes[period]} />
+        ))}
+      </div>
     </main>
   );
 }

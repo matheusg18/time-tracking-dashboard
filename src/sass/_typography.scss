@@ -1,8 +1,12 @@
 @use 'utils' as *;
 
 h1 {
-  color: $font-primary;
-  font-weight: 400;
+  color: white;
+  font-weight: 300;
+
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+    font-size: 2.4rem;
+  }
 }
 
 label {
@@ -12,23 +16,27 @@ label {
 .report {
   color: rgba($font-primary, 0.7);
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .period-title{
-  color: $font-primary;
+  color: white;
   font-size: 1rem;
   font-weight: 500;
 }
 
 .time-current {
-  color: $font-primary;
+  color: white;
   font-size: 1.5rem;
   font-weight: 300;
+
+  @media screen and (min-width: map-get($breakpoints, medium)) {
+    font-size: 3rem;
+  }
 }
 
 .time-previous {
-  color: rgba($font-primary, 0.7);
+  color: rgba(white, 0.7);
   font-size: 0.8rem;
   font-weight: 400;
 }

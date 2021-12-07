@@ -11,6 +11,7 @@ $background-profile-header: hsl(246, 80%, 60%);
 $background-card: hsl(235, 46%, 20%);
 $font-primary: hsl(236, 100%, 87%);
 $font-secondary: hsl(235, 45%, 61%);
+$breakpoints: (medium: 768px);
 
 @function space($factor) {
   $base-space: 8px;
