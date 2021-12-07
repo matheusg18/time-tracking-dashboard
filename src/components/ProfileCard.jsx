@@ -13,7 +13,7 @@ function ProfileCard() {
         </div>
       </div>
       <div className="profile-periods">
-        <div className="period">
+        <div>
           <input
             type="radio"
             name="period"
@@ -24,7 +24,7 @@ function ProfileCard() {
           />
           <label htmlFor="daily">Daily</label>
         </div>
-        <div className="period">
+        <div>
           <input
             type="radio"
             name="period"
@@ -35,7 +35,7 @@ function ProfileCard() {
           />
           <label htmlFor="weekly">Weekly</label>
         </div>
-        <div className="period">
+        <div>
           <input
             type="radio"
             name="period"
