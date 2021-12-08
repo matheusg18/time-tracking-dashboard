@@ -1,6 +1,6 @@
 # Frontend Mentor - Single price grid component solution
 
-Esta é a minha solução do desafio "[Order summary component](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)". O desafio consiste em criar um card com interatividade nos botões.
+Esta é a minha solução do desafio "[Time tracking dashboard](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw)". O desafio consiste em criar um dashboard de organização do tempo segindo o design, onde o usuário pode escolher o período de consulta.
 
 [Link para a solução](https://matheusg18.github.io/order-summary-component/)
 
@@ -21,7 +21,9 @@ Esta é a minha solução do desafio "[Order summary component](https://www.fron
 
 Os usuários devem ser capazes de:
 
-- Ver um efeito de _hover_ e _active_ nos botões
+- Ver o layout que se adequa ao tamanho da sua tela
+- Ver efeitos de _hover_ nos elementos interativos
+- Mudar entre a visaõ Daily, Weekly e Monthly
 
 ### Screenshots
 
@@ -43,6 +45,8 @@ Os usuários devem ser capazes de:
 
 ### Tecnologias usadas
 
+- JavaScript
+- React
 - HTML5
 - SASS
 - CSS
@@ -51,10 +55,10 @@ Os usuários devem ser capazes de:
 ### Aprendizados
 
 - SASS
-- Metodologia modular do Sass
-- SASS maps
-- Manipulação do background image
-- Problemas que podem ocorrer ao usar SASS placeholders dentro de media querries
+- SASS com React
+- SASS lists
+- SASS loops
+- Media querries por classe
 
 ## Contato
 
