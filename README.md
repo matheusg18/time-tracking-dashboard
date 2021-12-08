@@ -1,8 +1,8 @@
-# Frontend Mentor - Single price grid component solution
+# Frontend Mentor - Time tracking dashboard solution
 
-Esta é a minha solução do desafio "[Time tracking dashboard](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw)". O desafio consiste em criar um dashboard de organização do tempo segindo o design, onde o usuário pode escolher o período de consulta.
+Esta é a minha solução do desafio "[Time tracking dashboard](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw)". O desafio consiste em criar um dashboard de organização do tempo seguindo o design, onde o usuário pode escolher o período de consulta.
 
-[Link para a solução](https://matheusg18.github.io/order-summary-component/)
+[Link para a solução](https://matheusg18.github.io/time-tracking-dashboard/)
 
 ## Table of contents
 
@@ -23,7 +23,7 @@ Os usuários devem ser capazes de:
 
 - Ver o layout que se adequa ao tamanho da sua tela
 - Ver efeitos de _hover_ nos elementos interativos
-- Mudar entre a visaõ Daily, Weekly e Monthly
+- Mudar entre as visões: **Daily**, **Weekly** e **Monthly**
 
 ### Screenshots
 
@@ -31,15 +31,15 @@ Os usuários devem ser capazes de:
 
 ![mobile layout](./resources/mobile.png)
 
-#### Layout em 1024x768
+#### Layout em 1440x900
 
-![1024x768](./resources/1024x768.png)
+![1440x900](./resources/1440x900.png)
 
 ### Gifs
 
-#### Efeitos de _hover_ e _active_
+#### Mudando os períodos
 
-![hover no botão](./resources/button-interations.gif)
+![Mudando os períodos](./resources/example.gif)
 
 ## Desenvolvimento
 
